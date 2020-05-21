@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    background-color: #ff7bac;
+    border-radius: 50%;
+    width: 18.75rem;
+    height: 18.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+}
+
+.inner {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    width: 11.6rem;
+    height: 11.6rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -5;
+}
+
+/* Background pattern from Toptal Subtle Patterns */
+
+.circle1 {
+    background: url(img/circle_1.png);
+    /* animation: circle1 5s both alternsate infinite ease; */
+    animation: circle1 5s both alternate infinite ease ;
+}
+
+.circle2 {
+    background: url(img/circle_2.png);
+    transform: translate(5.9rem, -5.9rem);
+}
+
+.circle3 {
+    background: url(img/circle_3.png);
+    transform: translate(-5.9rem, 5.9rem);
+}
+
+.circle4 {
+    background: url(img/circle_4.png);
+    transform: translate(5.9rem, 5.9rem);
+}
+
+/* animation */
+
+/* @keyframes circle1 {
+    0%{
+        transform: translate(0,0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-5.9rem,-5.9rem);
+        opacity: 1;
+    }
+} */
+
+
+@keyframes main{
+    
+}
+
+@keyframes circle1 {
+    0% {
+        transform: translate(0,0);
+        opacity: 0;
+    }
+    20%{
+        transform: translate(0,0);
+    }
+    80% {
+        transform: translate(-5.9rem,-5.9rem);
+    }
+    100% {
+        transform: translate(-5.9rem,-5.9rem);
+    }
+}
